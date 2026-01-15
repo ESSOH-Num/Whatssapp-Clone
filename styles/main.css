@@ -1,0 +1,145 @@
+.main {
+  background-color: #fbffff;
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr;
+
+  border: 1px solid #7f8b8f5a;
+  border-radius: 10px 0 0 0;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: 50px 0 0 65px;
+
+  z-index: 99;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbffff;
+
+  border-radius: 10px 0 0 0;
+  border-right: 1px solid #7f8b8f5a;
+  height: 100%;
+  width: 100%;
+
+  gap: 10px;
+
+  z-index: 99;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fbffff;
+  border-radius: 10px 0 0 0;
+
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.left-head-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 30px;
+  gap: 40px;
+}
+.left-section-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.left-section-options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.new-chats,
+.left-options {
+  height: 26px;
+  width: 26px;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.new-chats:hover,
+.left-options:hover {
+  background-color: rgba(132, 160, 136, 0.244);
+}
+
+.search {
+  display: flex;
+  grid-template-columns: 1fr;
+}
+.w-search-bar {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 40px;
+}
+.search-icon {
+  position: absolute;
+  height: 20px;
+  width: 22px;
+  fill:#606060;
+
+  top: 8px;
+  left: 10px;
+}
+.search-bar {
+  width: 100%;
+  min-width: 350px;
+  border: none;
+  border-radius: 40px;
+
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: #f0f0f0;
+}
+.header-left-items {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Arial';
+  font-size: 14px;
+  gap: 15px;
+}
+.all-item,
+.nan-read-item,
+.favoris-item,
+.group-item {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 7px 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.all-item:hover,
+.nan-read-item:hover,
+.favoris-item:hover,
+.group-item:hover {
+  background-color: rgba(128, 128, 128, 0.196);
+}
+.all-item {
+  font-weight: 600;
+  background-color: #72727218;
+}
+
+.right-section {
+  display: flex;
+  background-color: #fbffff;
+  height: 100%;
+  width: 100%;
+
+  z-index: 99;
+}

@@ -4,6 +4,8 @@
   align-items: center;
 
   position: fixed;
+
+  z-index: 100;
 }
 .whatsapp-logo {
   height: 40px;
@@ -26,7 +28,7 @@
   justify-content: space-between;
 
   grid-template-columns: 1fr 2fr 1fr;
-  
+
   width: 60px;
   padding: 5px;
   position: fixed;
@@ -35,6 +37,7 @@
   bottom: 0;
 
   gap: 15px;
+  z-index: 100;
 }
 
 .left-bar-container,
@@ -47,15 +50,18 @@
   
   gap: 8px;
 }
+.left-bar-container-end {
+  justify-content: end;
+}
 
 .left-bar-container,
-.left-bar-container-middle {
+.left-bar-container-middle{
   border-bottom: 1px solid #616161;
   padding-bottom: 10px;
 }
-
 .left-bar-container-middle {
   flex: 1;
+  justify-content: space-between;
 }
 
 .msg-logo,
@@ -160,9 +166,6 @@
   fill: #616161;
 }
 
-.pub-logo {
-  margin-bottom: 30px;
-}
 
 .story-logo {
   color: #616161;
