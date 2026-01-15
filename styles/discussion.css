@@ -1,0 +1,169 @@
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+}
+.whatsapp-logo {
+  height: 40px;
+  width: 40px;
+
+  padding: 3px 5px;
+
+  fill: #14714e;
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #14714e;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  grid-template-columns: 1fr 2fr 1fr;
+  
+  width: 60px;
+  padding: 5px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+
+  gap: 15px;
+}
+
+.left-bar-container,
+.left-bar-container-middle,
+.left-bar-container-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 8px;
+}
+
+.left-bar-container,
+.left-bar-container-middle {
+  border-bottom: 1px solid #616161;
+  padding-bottom: 10px;
+}
+
+.left-bar-container-middle {
+  flex: 1;
+}
+
+.msg-logo,
+.phone-logo,
+.story-logo,
+.channel-logo,
+.community-logo,
+.archive-logo,
+.outils-logo,
+.pub-logo,
+.write-logo,
+.setting-logo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.phone-logo:hover,
+.story-logo:hover,
+.channel-logo:hover,
+.community-logo:hover,
+.archive-logo:hover,
+.outils-logo:hover,
+.pub-logo:hover,
+.write-logo:hover,
+.setting-logo:hover {
+  background-color: #d7f4e2ba;
+  transform: scale(1.05);
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #01170fbb;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 2px 3px;
+  top: 8px;
+  left: 38px;
+  white-space: nowrap;
+  pointer-events: none;
+
+  opacity: 0;
+  transition: all 0.20s ease;
+}
+
+.msg-logo:hover .tooltip,
+.phone-logo:hover .tooltip,
+.story-logo:hover .tooltip,
+.channel-logo:hover .tooltip,
+.community-logo:hover .tooltip,
+.archive-logo:hover .tooltip,
+.outils-logo:hover .tooltip,
+.pub-logo:hover .tooltip,
+.write-logo:hover .tooltip,
+.setting-logo:hover .tooltip,
+.avatar-profil:hover .tooltip {
+  opacity: 1;
+}
+
+.avatar-profil {
+  position: relative;
+  height: 28px;
+  width: 28px;
+
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.avatar-profil:hover {
+  transform: scale(1.05);
+}
+.avatar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.msg-logo {
+  background-color: #d7f4e2ba;
+  fill: #16783a;
+  border-bottom: 1.5px solid #16783a;
+
+  box-shadow: 1px 2px 5px #c9ffdd6c;
+}
+.phone-logo,
+.cmt-icon,
+.community-logo,
+.archive-logo,
+.outils-logo,
+.channel-logo,
+.pub-logo,
+.write-logo,
+.setting-logo {
+  fill: #616161;
+}
+
+.pub-logo {
+  margin-bottom: 30px;
+}
+
+.story-logo {
+  color: #616161;
+}
