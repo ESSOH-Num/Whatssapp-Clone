@@ -54,8 +54,9 @@
   gap: 40px;
 }
 .left-section-title {
+  font-family: 'Arial' sans-serif;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .left-section-options {
   display: flex;
@@ -133,13 +134,4 @@
 .all-item {
   font-weight: 600;
   background-color: #72727218;
-}
-
-.right-section {
-  display: flex;
-  background-color: #fbffff;
-  height: 100%;
-  width: 100%;
-
-  z-index: 99;
 }

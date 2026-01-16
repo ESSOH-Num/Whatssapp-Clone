@@ -1,0 +1,58 @@
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.chat-box-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.chat-msg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  height: 60px;
+  border-radius: 10px;
+  padding: 5px 15px;
+
+  gap: 15px;
+  cursor: pointer;
+
+  transition: background-color 0.15s;
+}
+.chat-msg:hover {
+  background-color: rgb(235, 235, 235);
+}
+.contact-profil {
+  height: 50px;
+  width: 50px;
+}
+.ctc-img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.ctc-name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial';
+  gap: 6px;
+}
+.name-p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.msg-preview {
+  color: rgb(81, 81, 81);
+  font-size: 15px;
+}
+
+.date {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}

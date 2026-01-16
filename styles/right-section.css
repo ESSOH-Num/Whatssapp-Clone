@@ -1,0 +1,44 @@
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f5f4;
+  height: 100%;
+  width: 100%;
+
+  z-index: 99;
+}
+.right-section-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 20px;
+}
+.what-logo {
+  fill: gray;
+  height: 80px;
+  width: 80px;
+}
+
+.description {
+  font-size: 30px;
+  font-weight: 500;
+}
+.sub-descrp,
+.signature,
+.security-msg {
+  color: rgb(96, 96, 96);
+}
+
+.signature {
+  font-style: italic;
+}
+
+.security-msg {
+  position: absolute;
+  bottom: 10px;
+}
