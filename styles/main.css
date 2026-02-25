@@ -1,10 +1,10 @@
 .main {
-  background-color: #fbffff;
-  position: fixed;
-
   display: flex;
   flex-direction: row;
   grid-template-columns: 1fr 1fr;
+
+  background-color: #fbffff;
+  position: fixed;
 
   border: 1px solid #7f8b8f5a;
   border-radius: 10px 0 0 0;
